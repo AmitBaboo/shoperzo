@@ -1,0 +1,109 @@
+.scroll-sidebar::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+}
+
+.scroll-sidebar::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* Rounded track */
+}
+
+.scroll-sidebar::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #71797E, #E5E4E2);
+    border-radius: 10px; /* Rounded thumb */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
+}
+
+.scroll-sidebar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #E5E4E2, #71797E); /* Corrected gradient on active */
+}
+
+.scroll-sidebar::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(45deg, #71797E, #E5E4E2);
+}
+
+.userstyle {
+    padding-left: 10px;
+}
+
+.container-fluid {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url('/admin-assets/images/backgrounds/dashboard2.jpg');
+    background-size: cover; /* Image ko pura cover karne ke liye */
+    background-repeat: no-repeat; /* Image repeat na ho */
+    background-position: center; /* Image ko center mein rakhne ke liye */
+    width: 100%; /* Div ki width set karein */
+    height:100vh; /* Div ki height set karein */
+    color: white; /* Text color set karein (optional) */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+}
+
+.card-title {
+    color: #FFFFFF;
+}
+
+.card-body h4{
+    color: #FFFFFF;
+}
+
+.card-body p{
+    color: #FFFFFF;
+}
+
+.app-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar {
+    background-color: transparent; /* Default transparent background */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.3); /* Background changes to black on scroll */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for better appearance */
+}
+
+.nav-link,
+.form-control {
+    transition: color 0.3s ease;
+}
+
+.navbar.scrolled .nav-link {
+    color: #000 !important; /* Text color for scrolled state */
+}
+
+.navbar.scrolled .form-control {
+    color: #000; /* Input text color for scrolled state */
+}
+
+.left-sidebar{
+   
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url('/admin-assets/images/backgrounds/sidebar.jpg');
+    background-size: cover; /* Image ko pura cover karne ke liye */
+    background-repeat: no-repeat; /* Image repeat na ho */
+    background-position: center; /* Image ko center mein rakhne ke liye */
+    height: 100vh; /* Div ki height set karein */
+}
+
+.sidebar-nav ul .sidebar-item .sidebar-link {
+    color:#FFFFFF;
+    transition: 0.5s;
+}
+.sidebar-nav ul .sidebar-item :hover{
+    color:#000000;
+    transition: 0.5s;
+}
+
+.nav-small-cap {
+    color:#FFFFFF;
+  
+
+}
