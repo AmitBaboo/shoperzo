@@ -9,6 +9,7 @@
   </head>
   
 <body>
+@include('admin.message')
 @include('admin.layouts.sidebar')
     <!--  Main wrapper -->
     <div class="body-wrapper">

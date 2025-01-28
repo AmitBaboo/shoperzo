@@ -7,6 +7,9 @@
   <title>Login</title>
   <link rel="shortcut icon" type="image/png" href="{{asset('admin-assets/images/logos/favicon.png')}}" />
   <link rel="stylesheet" href="{{asset('admin-assets/css/styles.min.css')}}" />
+  <link rel="stylesheet" href="{{asset('admin-assets/css/custom.css')}}" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
 </head>
 
 <body>
@@ -16,11 +19,11 @@
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
     data-sidebar-position="fixed" data-header-position="fixed">
     <div
-      class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
+      class="position-relative overflow-hidden min-vh-100 d-flex align-items-center justify-content-center">
       <div class="d-flex align-items-center justify-content-center w-100">
         <div class="row justify-content-center w-100">
           <div class="col-md-8 col-lg-6 col-xxl-3">
-            <div class="card mb-0">
+            <div class="login-card mb-0">
               <div class="card-body">
                   <img src="{{asset('admin-assets/images/logos/dark-logo.svg')}}" width="180" alt="">
                 </a>
@@ -48,7 +51,7 @@
                   <div class="d-flex align-items-center justify-content-between mb-4">
                     <div class="form-check">
                       <input class="form-check-input primary" type="checkbox" value="" id="flexCheckChecked" checked>
-                      <label class="form-check-label text-dark" for="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
                         Remeber this Device
                       </label>
                     </div>

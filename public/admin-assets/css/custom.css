@@ -1,3 +1,39 @@
+.page-wrapper {
+    background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url('/admin-assets/images/backgrounds/login.jpg');
+    background-size: cover; /* Image ko pura cover karne ke liye */
+    background-repeat: no-repeat; /* Image repeat na ho */
+    background-position: center; /* Image ko center mein rakhne ke liye */
+    width: 100%; /* Div ki width set karein */
+    height:100vh; /* Div ki height set karein */
+    color: white; /* Text color set karein (optional) */
+}
+.login-card{
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+
+}
+
+input {
+    background-color: transparent; /* Background ko transparent banata hai */
+    border: 1px solid #ccc; /* Border ka color aur style */
+    color: #000; /* Text ka color */
+    padding: 10px; /* Padding */
+    font-size: 16px; /* Font size */
+  }
+.form-label{
+    color: #FFFFFF;
+}
+.form-control:focus{
+    color: #FFFFFF;
+
+}
+.form-control{
+    color: #FFFFFF;
+}
+
+
 .scroll-sidebar::-webkit-scrollbar {
     width: 8px; /* Scrollbar width */
 }
@@ -36,8 +72,8 @@
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
 }
 
 .card-title {
@@ -62,8 +98,7 @@
 }
 
 .navbar {
-    background-color: transparent; /* Default transparent background */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar.scrolled {
@@ -86,7 +121,8 @@
 
 .left-sidebar{
    
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url('/admin-assets/images/backgrounds/sidebar.jpg');
+    background: rgba(0, 0, 0, 0.5) url('/admin-assets/images/backgrounds/sidebar.jpg');
+    background-blend-mode: overlay; 
     background-size: cover; /* Image ko pura cover karne ke liye */
     background-repeat: no-repeat; /* Image repeat na ho */
     background-position: center; /* Image ko center mein rakhne ke liye */

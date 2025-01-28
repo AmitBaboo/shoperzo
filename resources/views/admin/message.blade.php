@@ -1,12 +1,22 @@
 @if (Session::has('error'))
-
-{{Session::get('error')}}
-
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Error!',
+            text: '{{ Session::get('error') }}',
+        });
+    </script>
 @endif
 
 
+
 @if (Session::has('success'))
-
-{{Session::get('success')}}
-
+    <script>
+        Swal.fire({
+            icon: 'success',
+            title: 'Success!',
+            text: '{{ Session::get('success') }}',
+          
+        });
+    </script>
 @endif
