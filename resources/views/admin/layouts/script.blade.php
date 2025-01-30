@@ -1,10 +1,22 @@
-<script src="{{asset('admin-assets/libs/jquery/dist/jquery.min.js')}}"></script>
-  <script src="{{asset('admin-assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{asset('admin-assets/js/sidebarmenu.js')}}"></script>
-  <script src="{{asset('admin-assets/js/app.min.js')}}"></script>
-  <script src="{{asset('admin-assets/apexcharts/dist/apexcharts.min.js')}}"></script>
-  <script src="{{asset('admin-assets/simplebar/dist/simplebar.js')}}"></script>
-  <script src="{{asset('admin-assets/js/dashboard.js')}}"></script>
+ <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="{{asset('admin-assets/vendor/libs/jquery/jquery.js')}}"></script>
+    <script src="{{asset('admin-assets/vendor/libs/popper/popper.js')}}"></script>
+    <script src="{{asset('admin-assets/vendor/js/bootstrap.js')}}"></script>
+    <script src="{{asset('admin-assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
+    <script src="{{asset('admin-assets/vendor/js/menu.js')}}"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="{{asset('admin-assets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
+
+    <!-- Main JS -->
+    <script src="{{asset('admin-assets/js/main.js')}}"></script>
+
+    <!-- Page JS -->
+    <script src="{{asset('admin-assets/js/dashboards-analytics.js')}}"></script>
 
   <script src="{{asset('admin-assets/js/custom.js')}}"></script>
   

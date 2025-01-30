@@ -1,11 +1,11 @@
-.page-wrapper {
-    background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url('/admin-assets/images/backgrounds/login.jpg');
-    background-size: cover; /* Image ko pura cover karne ke liye */
-    background-repeat: no-repeat; /* Image repeat na ho */
-    background-position: center; /* Image ko center mein rakhne ke liye */
-    width: 100%; /* Div ki width set karein */
-    height:100vh; /* Div ki height set karein */
-    color: white; /* Text color set karein (optional) */
+/* .page-wrapper {
+    background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url('/admin-assets/img/backgrounds/xxx.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 100%; 
+    height:100vh; 
+    color: white; 
 }
 .login-card{
     padding: 30px;
@@ -16,11 +16,11 @@
 }
 
 input {
-    background-color: transparent; /* Background ko transparent banata hai */
-    border: 1px solid #ccc; /* Border ka color aur style */
-    color: #000; /* Text ka color */
-    padding: 10px; /* Padding */
-    font-size: 16px; /* Font size */
+    background-color: transparent; 
+    border: 1px solid #ccc; 
+    color: #000; 
+    padding: 10px; 
+    font-size: 16px; 
   }
 .form-label{
     color: #FFFFFF;
@@ -35,22 +35,22 @@ input {
 
 
 .scroll-sidebar::-webkit-scrollbar {
-    width: 8px; /* Scrollbar width */
+    width: 8px; 
 }
 
 .scroll-sidebar::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px; /* Rounded track */
+    border-radius: 10px; 
 }
 
 .scroll-sidebar::-webkit-scrollbar-thumb {
     background: linear-gradient(45deg, #71797E, #E5E4E2);
-    border-radius: 10px; /* Rounded thumb */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .scroll-sidebar::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, #E5E4E2, #71797E); /* Corrected gradient on active */
+    background: linear-gradient(45deg, #E5E4E2, #71797E); 
 }
 
 .scroll-sidebar::-webkit-scrollbar-thumb:active {
@@ -62,13 +62,13 @@ input {
 }
 
 .container-fluid {
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url('/admin-assets/images/backgrounds/dashboard2.jpg');
-    background-size: cover; /* Image ko pura cover karne ke liye */
-    background-repeat: no-repeat; /* Image repeat na ho */
-    background-position: center; /* Image ko center mein rakhne ke liye */
-    width: 100%; /* Div ki width set karein */
-    height:100vh; /* Div ki height set karein */
-    color: white; /* Text color set karein (optional) */
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url('/admin-assets/img/backgrounds/dashboard.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100%; 
+    height:100vh;
+    color: white; 
 }
 
 .card {
@@ -102,8 +102,8 @@ input {
 }
 
 .navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.3); /* Background changes to black on scroll */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for better appearance */
+    background-color: rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
 .nav-link,
@@ -112,34 +112,61 @@ input {
 }
 
 .navbar.scrolled .nav-link {
-    color: #000 !important; /* Text color for scrolled state */
+    color: #000 !important; 
 }
 
 .navbar.scrolled .form-control {
-    color: #000; /* Input text color for scrolled state */
+    color: #000; 
 }
 
-.left-sidebar{
+
+*/
+
+
+.content-wrapper{
    
-    background: rgba(0, 0, 0, 0.5) url('/admin-assets/images/backgrounds/sidebar.jpg');
+    background: rgba(0, 0, 0, 0.5) url('/admin-assets/img/backgrounds/dashboard.jpg');
     background-blend-mode: overlay; 
-    background-size: cover; /* Image ko pura cover karne ke liye */
-    background-repeat: no-repeat; /* Image repeat na ho */
-    background-position: center; /* Image ko center mein rakhne ke liye */
-    height: 100vh; /* Div ki height set karein */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; 
 }
 
-.sidebar-nav ul .sidebar-item .sidebar-link {
-    color:#FFFFFF;
-    transition: 0.5s;
-}
-.sidebar-nav ul .sidebar-item :hover{
-    color:#000000;
-    transition: 0.5s;
+
+
+.login-background{
+background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url('/admin-assets/img/backgrounds/login.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center; 
+width: 100%; 
+height:100vh; 
+color: white; 
 }
 
-.nav-small-cap {
-    color:#FFFFFF;
-  
 
+
+.card {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+.card-body{
+    color: #fff;
+}
+
+.card-body h4{
+    color: #fff;
+}
+
+.card-body label{
+    color: #fff;
+}
+
+.card-body input{
+    color: #fff;
+}
+
+
+
