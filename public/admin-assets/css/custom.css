@@ -125,7 +125,7 @@ input {
 
 
 /* Login Page */
-
+/* 
 .login-background{
 background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url('/admin-assets/img/backgrounds/login.jpg');
 background-size: cover;
@@ -179,7 +179,7 @@ input:-webkit-autofill {
 
 
 /* Dashboard */
-
+/* 
 .layout-page {
     position: relative;
     min-height: 100vh;
@@ -195,23 +195,23 @@ input:-webkit-autofill {
     height: 100%;
     background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)),  url('/admin-assets/img/backgrounds/dashboard.jpg') center/cover no-repeat;
     z-index: -1;
-}
+} */
 
 /* Dashboard */
 
 /* Sidebar */
-
+/* 
 .menu-vertical{
     background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url('/admin-assets/img/backgrounds/sidebar.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
     color: white ; 
-    }
+    } */
 
   
 /* Sidebar */
-.menu-header-text{
+/* .menu-header-text{
     color: #fff !important;
 }
 .text-truncate {
@@ -224,4 +224,13 @@ input:-webkit-autofill {
     color: #fff !important;
 }
 
+.card-header{
+color: #fff;
+}
 
+.btn-outline-secondary {
+    color: #fff;
+    border-color: #fff;
+} */
+
+ 

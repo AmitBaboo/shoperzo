@@ -1,4 +1,4 @@
-<meta name="description" content="" />
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
 <!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="{{asset('admin-assets/img/favicon/favicon.ico')}}" />
@@ -36,3 +36,49 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+
+  <style>
+    
+  .disable{
+    color: #a7acb2 ;
+    background-color: rgba(34, 48, 62, 0.06) ;
+    border-color: #cacdd1 ;
+    opacity: 1 ;
+}
+.disable:hover{
+    color: #a7acb2 ;
+    background-color: rgba(34, 48, 62, 0.06) ;
+    border-color: #cacdd1 ;
+    opacity: 1 ;
+}
+
+
+.Search-bar{
+  margin-left:20px;
+  margin-right:20px;
+  margin-bottom:10px;
+}
+
+.Search-bar input{
+  border-right:none !important;
+  border-radius: 0px !important;
+  border-color:#696cff;
+}
+.Search-bar input:hover{
+  border-color:#696cff !important;
+}
+.Search-bar button{
+  border-left:none;
+  border-radius: 0px; 
+  color: #696cff;
+  border-color:#696cff;
+}
+.Search-bar .btn-outline-primary:hover{
+box-shadow:none;
+border-color:#696cff;
+-webkit-transform: translateY(0px); 
+-ms-transform: translateY(0px);
+}
+
+  </style>

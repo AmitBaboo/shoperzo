@@ -10,10 +10,15 @@ use Illuminate\Support\Facades\Validator;
 class HomeController extends Controller
 {
     public function index(){
-        session()->flash('success', 'Loged in Successfuly, Welcome to the Dashboard!');
+        //session()->flash('success', 'Loged in Successfuly, Welcome to the Dashboard!');
         return view ('admin.dashboard');
         //$admin = Auth::guard('admin')->user();
         //echo "welcome  ".$admin->name. '<a href="'.route('admin.logout').'" > logout</a>';
+
+
+
+
+        
     }
 
     

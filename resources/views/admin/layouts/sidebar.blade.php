@@ -62,8 +62,8 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboards -->
-            <li class="menu-item active">
-              <a href="javascript:void(0);" class="menu-link">
+            <li class="menu-item {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
+              <a href="{{route('admin.dashboard')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-smile"></i>
                 <div class="text-truncate" data-i18n="Dashboards">Dashboards</div>
               </a>
@@ -77,24 +77,25 @@
          
           
             <!-- Pages -->
-            <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                <div class="text-truncate" data-i18n="Account Settings">Categories</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="pages-account-settings-account.html" class="menu-link">
-                    <div class="text-truncate" data-i18n="Account">Create</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="pages-account-settings-notifications.html" class="menu-link">
-                    <div class="text-truncate" data-i18n="Notifications">View</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
+            <li class="menu-item {{ request()->routeIs('categories.create', 'categories.index') ? 'active open' : '' }}">
+  <a href="#" class="menu-link menu-toggle">
+    <i class="menu-icon tf-icons bx bx-dock-top"></i>
+    <div class="text-truncate" data-i18n="Account Settings">Categories</div>
+  </a>
+  <ul class="menu-sub">
+    <li class="menu-item {{ request()->routeIs('categories.create') ? 'active' : '' }}">
+      <a href="{{route('categories.create')}}" class="menu-link">
+        <div class="text-truncate" data-i18n="Account">Create</div>
+      </a>
+    </li>
+    <li class="menu-item {{ request()->routeIs('categories.index') ? 'active' : '' }}">
+      <a href="{{route('categories.index')}}" class="menu-link">
+        <div class="text-truncate" data-i18n="Notifications">View</div>
+      </a>
+    </li>
+  </ul>
+</li>
+
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>

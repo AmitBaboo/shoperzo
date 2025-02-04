@@ -1,22 +1,23 @@
-@if (Session::has('error'))
+@if (session('success'))
     <script>
-        Swal.fire({
-            icon: 'error',
-            title: 'Error!',
-            text: '{{ Session::get('error') }}',
+        document.addEventListener("DOMContentLoaded", function () {
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: "{{ session('success') }}", // ✅ Message properly show karega
+            });
         });
     </script>
 @endif
 
-
-
-@if (Session::has('success'))
+@if (session('error'))
     <script>
-        Swal.fire({
-            icon: 'success',
-            title: 'Success!',
-            text: '{{ Session::get('success') }}',
-          
+        document.addEventListener("DOMContentLoaded", function () {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error!',
+                text: "{{ session('error') }}", // ✅ Message properly show karega
+            });
         });
     </script>
 @endif
